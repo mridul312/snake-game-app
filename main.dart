@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
-import 'dart:async';
+import 'dart:math'; //for random number generator
+import 'dart:async';// for timer
 
 void main() => runApp(MyApp());
 
