@@ -54,6 +54,8 @@ class _SnakeGameState extends State<SnakeGame> {
     });
   }
 
+//add-adds element to the list
+  //insert- adds element to the given position
   void moveSnake() {
     setState(() {
       switch (direction) {
@@ -94,7 +96,7 @@ class _SnakeGameState extends State<SnakeGame> {
         snake.first[0] > squaresPerRow) {
       return true;
     }
-
+//snake head is same as any element of body of snake then return true
     for (var i = 1; i < snake.length; ++i) {
       if (snake[i][0] == snake.first[0] && snake[i][1] == snake.first[1]) {
         return true;
